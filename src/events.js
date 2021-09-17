@@ -37,7 +37,8 @@ const handleSelfPlus = ( user, channel ) => {
 const handleTophMinus = async( item, operation, channel ) => {
   const score = await points.updateScore( item, operation ),
         //operationName = operations.getOperationName( operation ),
-        message = 'DERP';
+        message = messages.getRandomMessage( operationName, item, score );
+        console.log( operationName );
 
   return slack.sendMessage( message, channel );
 };

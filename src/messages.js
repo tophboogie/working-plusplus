@@ -78,6 +78,17 @@ messages[ operations.SELF ] = [
   }
 ];
 
+messages[ operations.TOPH ] = [
+  {
+    probability: 100,
+    set: [
+      'You threw a boomerang!',
+      'Please do not mess with the Gopher.',
+      'That is not allowed. DERP.'
+    ]
+  }
+]
+
 /**
  * Retrieves a random message from the given pool of messages.
  *
@@ -101,6 +112,10 @@ const getRandomMessage = ( operation, item, score = 0 ) => {
 
     case operations.SELF:
       format = '<item> <message>';
+      break;
+
+    case operations.TOPH:
+      format = '<message> *<item>* is now on <score> point<plural>.';
       break;
 
     default:
