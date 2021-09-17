@@ -36,7 +36,7 @@ const handleSelfPlus = ( user, channel ) => {
  */
 const handleTophMinus = async( item, operation, channel ) => {
   const score = await points.updateScore( item, operation ),
-        //operationName = operations.getOperationName( operation ),
+        operationName = operations.getOperationName( operation ),
         message = messages.getRandomMessage( operationName, item, score );
         console.log( operationName );
 
