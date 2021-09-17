@@ -82,9 +82,10 @@ messages[ operations.TOPH ] = [
   {
     probability: 100,
     set: [
-      'You threw a boomerang!',
-      'Please do not mess with the Gopher.',
-      'That is not allowed. DERP.'
+      'Boomerang!',
+      'Please do not disturb the gopher.',
+      'That is not allowed. DERP.',
+      'Word. That not gonna work.'
     ]
   }
 ]
