@@ -146,7 +146,7 @@ const handlers = {
     }
 
     // Don't allow -- for Topher :P BWAHAHAHA
-    if ( item === 'gopher' && '-' === operation ) {
+    if ( item === 'UFFO19LCQ' && '-' === operation ) {
       return handleTophMinus( event.user, operation, event.channel );
     }
     else {
