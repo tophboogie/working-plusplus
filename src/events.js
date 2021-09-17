@@ -32,6 +32,17 @@ const handleSelfPlus = ( user, channel ) => {
 };
 
 /**
+ * Handles an attempt by a user to minus Topher LOLOL
+ */
+const handleTophMinus = async( item, operation, channel ) => {
+  const score = await points.updateScore( item, operation ),
+        operationName = operations.getOperationName( operation ),
+        message = messages.getRandomMessage( operationName, item, score );
+
+  return slack.sendMessage( message, channel );
+};
+
+/**
  * Handles a plus or minus against a user, and then notifies the channel of the new score.
  *
  * @param {string} item      The Slack user ID (if user) or name (if thing) of the item being
@@ -134,8 +145,14 @@ const handlers = {
       return false;
     }
 
-    // Otherwise, let's go!
-    return handlePlusMinus( item, operation, event.channel );
+    // Don't allow -- for Topher :P BWAHAHAHA
+    if ( item === 'gopher' && '-' === operation ) {
+      return handleTophMinus( event.user, operation, event.channel );
+    }
+    else {
+      // Otherwise, let's go!
+      return handlePlusMinus( item, operation, event.channel );
+    }
 
   }, // Message event.
 
@@ -226,6 +243,7 @@ const handleEvent = ( event, request ) => {
 
 module.exports = {
   handleSelfPlus,
+  handleTophMinus,
   handlePlusMinus,
   sayThankyou,
   sendHelp,
