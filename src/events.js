@@ -145,6 +145,8 @@ const handlers = {
       return false;
     }
 
+    console.log(item, operation);
+
     // Don't allow -- for Topher :P BWAHAHAHA
     if ( item === 'UFFO19LCQ' && '-' === operation ) {
       return handleTophMinus( event.user, operation, event.channel );
