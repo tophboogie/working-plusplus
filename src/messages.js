@@ -18,22 +18,13 @@ messages[ operations.PLUS ] = [
   {
     probability: 100,
     set: [
-      'Congrats!',
-      'Got it!',
-      'Bravo.',
-      'Oh well done.',
-      'Nice work!',
-      'Well done.',
-      'Exquisite.',
-      'Lovely.',
-      'Superb.',
-      'Classic!',
-      'Charming.',
-      'Noted.',
-      'Well, well!',
-      'Well played.',
-      'Sincerest congratulations.',
-      'Delicious.'
+      'Congrats! You saved the spot! :raised_hands:',
+      'The Avid Gods smile upon you. :smile:',
+      'Buy that plugin you always wanted!',
+      'Treat yourself to Sugarfish!? :blowfish::tropical_fish:',
+      'Nice work! Do a twirl! :beach-ball:',
+      'Well done. Peter\'s Mom would be proud!',
+      ''
     ]
   },
   {
@@ -46,14 +37,12 @@ messages[ operations.MINUS ] = [
   {
     probability: 100,
     set: [
-      'Oh RLY?',
-      'Oh, really?',
-      'Oh :slightly_frowning_face:.',
-      'I see.',
-      'Ouch.',
-      'Oh là là.',
-      'Oh.',
-      'Condolences.'
+      'SHAME! SHAME!',
+      'Get your shit together! :poop:',
+      'Ving is here to moon you.',
+      'Mix in the MR for a week!',
+      ':facepunch::anger:',
+      ''
     ]
   },
   {
