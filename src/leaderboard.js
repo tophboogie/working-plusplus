@@ -129,15 +129,15 @@ const rankItems = async( topScores, itemType = 'users', format = 'slack' ) => {
  */
 const getForSlack = async( event, request ) => {
 
-  const limit = 5;
+  const limit = 100;
 
   const scores = await points.retrieveTopScores(),
         users = await rankItems( scores, 'users' ),
         things = await rankItems( scores, 'things' );
 
   const messageText = (
-    'Here you go. ' +
-    'Or see the <' + getLeaderboardUrl( request ) + '|whole list>.'
+    'Here you go. ' //+
+    //'Or see the <' + getLeaderboardUrl( request ) + '|whole list>.'
   );
 
   const message = {
