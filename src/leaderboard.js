@@ -136,8 +136,8 @@ const getForSlack = async( event, request ) => {
         things = await rankItems( scores, 'things' );
 
   const messageText = (
-    'Here you go. ' +
-    'Or see the <' + getLeaderboardUrl( request ) + '|whole list>.'
+    'Here you go. ' //+
+    //'Or see the <' + getLeaderboardUrl( request ) + '|whole list>.'
   );
 
   const message = {
