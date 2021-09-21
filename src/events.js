@@ -149,7 +149,7 @@ const handlers = {
     // if ( item === 'UFF019LCQ' && '-' === operation ) {
     //   return handleTophMinus( event.user, operation, event.channel );
     // }
-    if ( item === 'UEVF75PQR' && '-' === operation ) {
+    if ( item === 'UFF019LCQ' && '-' === operation ) {
       return handleTophMinus( event.user, operation, event.channel );
     }
     else {
