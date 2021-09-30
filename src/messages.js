@@ -97,15 +97,12 @@ const getRandomMessage = ( operation, item, score = 0 ) => {
   switch ( operation ) {
     case operations.MINUS:
     case operations.PLUS:
+    case operations.TOPH:
       format = '<message> *<item>* now has <score> point<plural>.';
       break;
 
     case operations.SELF:
       format = '<item> <message>';
-      break;
-
-    case operations.TOPH:
-      format = '<message> *<item>* is now on <score> point<plural>.';
       break;
 
     default:
