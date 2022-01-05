@@ -22,6 +22,8 @@ messages[ operations.PLUS ] = [
       'The God of Pro Tools smiles upon you. :smile:',
       'Buy that plugin you always wanted!',
       'Nice work! Do a twirl! :beach-ball:',
+      'Breakfast hours are extended for you! :fried_egg:',
+      'You have been approved to run for the hills. :sunrise_over_mountains:',
       ''
     ]
   },
@@ -39,6 +41,8 @@ messages[ operations.MINUS ] = [
       'Get your shit together! :poop:',
       'Mix in the MR for a week!',
       ':facepunch::anger:',
+      'No more snack for you!',
+      'Ving is here to moon you.',
       ''
     ]
   },
