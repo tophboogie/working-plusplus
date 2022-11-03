@@ -24,6 +24,10 @@ messages[ operations.PLUS ] = [
       'Nice work! Do a twirl! :beach-ball:',
       'Breakfast hours are extended for you! :fried_egg:',
       'You have been approved to run for the hills. :sunrise_over_mountains:',
+      'Avid Deities have postponed your next Pro Tools crash',
+      'You magnificent bastard!',
+      'Here\'s a gold star! :star2:',
+      'Duey will make you a cocktail!',
       ''
     ]
   },
@@ -42,7 +46,15 @@ messages[ operations.MINUS ] = [
       'Mix in the MR for a week!',
       ':facepunch::anger:',
       'No more snack for you!',
-      'Ving is here to moon you.',
+      'Ving is here to :crescent_moon: you.',
+      'Your xfer links wil last only 1 day.',
+      'You have been disconnected from Lime SFX.',
+      'Your next SC talent will use wifi',
+      'You 2 pops will be wrong all week',
+      'How am I not surprised. :face_palm:',
+      'Wow.  Just... wow... :expressionless:',
+      'Why are you like this? :thinking_face:',
+      'Your bar privileges have been revoked for the day!',
       ''
     ]
   },
@@ -74,8 +86,8 @@ messages[ operations.TOPH ] = [
     set: [
       'Boomerang!',
       'Please do not disturb the gopher.',
-      'That is not allowed. DERP.',
-      'Word. That not gonna work.'
+      'That is not allowed.',
+      'Your money is no good here. '
     ]
   }
 ]
